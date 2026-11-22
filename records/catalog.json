@@ -16,15 +16,27 @@
     "sha256": "179c4d59d6fc6241b7a91927a6590c368a0dd70b600a7d305ac7a02ba3cbaff9"
   },
   "protection": {
-    "rows": 1,
-    "sha256": "27247a7c55608e1396c126784165327a5b98c90ee8cd7228d9d23c9171dad986"
+    "rows": 2,
+    "sha256": "8875939bb04fd8db172a144d6585200fdcc041571754f502bbd88e3ffb9ce028"
   },
   "next_quotes": {
-    "rows": 2,
-    "sha256": "430920fae60c8404e3ccf3927f6be32812dbc95fac6ce57255568f41ecacfc14"
+    "rows": 4,
+    "sha256": "a5d7ce0a3f121d3fc27dd24881b1020024545c240a4fee80ffdf4a81a8d4d63c"
   },
   "refunds": {
     "rows": 3,
     "sha256": "12606ed031234079823053ae91121edc47eaa12a4f6ca90184d90158b91db41b"
+  },
+  "postings": {
+    "rows": 3,
+    "sha256": "3a4ca5dd29ac5545801b67121d6ca7edf7a548978111e5b95db180b86aeae938"
+  },
+  "equivalence_notices": {
+    "rows": 2,
+    "sha256": "e14684593149bf1ba40b51d9eec5917acd0a48cd9594e85c808febd9578a480f"
+  },
+  "provision_limits": {
+    "rows": 1,
+    "sha256": "691fd4579ed355eaa6ffe5b38f600c5cbc8a7728192e007f60475e8086644dce"
   }
 }

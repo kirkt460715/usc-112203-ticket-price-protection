@@ -13,6 +13,9 @@ records 保存可离线使用的合成业务记录。每行一个 UTF-8 JSON 对
 | protection.jsonl | 期内的旧订单遇到同等含费挂牌降价可退差；不能给已退全款重复补。 |
 | next_quotes.jsonl | 预备挂牌与实际公示是不同事件。 |
 | refunds.jsonl | 已退回款的记录，退款为全额或特定保价来源下的部分。 |
+| postings.jsonl | 同一报价可能发令、已生效、待回执。时钟以挂牌轮次为准。 |
+| equivalence_notices.jsonl | 公告后的公布时间和兑现市场；受理中的变更不能抢先释放保价占用。 |
+| provision_limits.jsonl | 向财务确认的本轮保价准备额，单位为分。 |
 
 ## 核对资料
 
