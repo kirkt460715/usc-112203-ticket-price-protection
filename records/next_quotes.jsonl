@@ -1,0 +1,2 @@
+{"id":"N1","round":9,"area":"north","bundle":"seat","channel":"web","price":85,"fee":3,"state":"approved","effective_minute":155,"as_of":130}
+{"id":"N2","round":9,"area":"south","bundle":"seat","channel":"partner","price":93,"fee":10,"state":"posted","effective_minute":128,"as_of":126}

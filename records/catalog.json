@@ -1,0 +1,30 @@
+{
+  "quotes": {
+    "rows": 48,
+    "sha256": "49f56e75c353532fccfa9cb02dd2dacd97d1d0c76830deba6afa476432c369dc"
+  },
+  "inventory": {
+    "rows": 241,
+    "sha256": "3a8697eeb9f94383a008cbf7f5d03b68a668636f545a3938303f4769db360f91"
+  },
+  "journeys": {
+    "rows": 1920,
+    "sha256": "1e6051feb61f13150622919dabb95dd33a5ac68b0957b3c193a2dfec0772c727"
+  },
+  "equivalence": {
+    "rows": 2,
+    "sha256": "179c4d59d6fc6241b7a91927a6590c368a0dd70b600a7d305ac7a02ba3cbaff9"
+  },
+  "protection": {
+    "rows": 1,
+    "sha256": "27247a7c55608e1396c126784165327a5b98c90ee8cd7228d9d23c9171dad986"
+  },
+  "next_quotes": {
+    "rows": 2,
+    "sha256": "430920fae60c8404e3ccf3927f6be32812dbc95fac6ce57255568f41ecacfc14"
+  },
+  "refunds": {
+    "rows": 3,
+    "sha256": "12606ed031234079823053ae91121edc47eaa12a4f6ca90184d90158b91db41b"
+  }
+}

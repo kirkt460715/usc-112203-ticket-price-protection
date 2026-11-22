@@ -1,0 +1,2 @@
+{"id":"E1","areas":["north","south"],"bundles":["seat"],"channels":["web","partner"],"valid_rounds":[7,8,9]}
+{"id":"E2","areas":["deck"],"bundles":["seat","seat-plus"],"channels":["web"],"valid_rounds":[8,9]}
