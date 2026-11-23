@@ -1,0 +1,212 @@
+{
+  "as_of": 160,
+  "candidate_verdicts": {
+    "N1": {
+      "quote_id": "N1",
+      "inclusive_cents": 8800,
+      "group_key": [
+        "north",
+        "web",
+        "seat"
+      ],
+      "admission": "unobserved_price",
+      "reasons": [
+        "等效规则 ['E1'] 已公布，可并入 [('north', 'partner', 'seat'), ('south', 'web', 'seat'), ('south', 'partner', 'seat')] 同权益观测",
+        "候选含费价 8800 分超出已辨识区间 9300–18000 分，该价位没有足够支撑，保留在求证区间",
+        "同口径历史成交量带 12–19 张；另有未满足尝试 1–6 次，属配给证据而非可兑现销量，不计入收入区间",
+        "历史挂牌 O8-north-web 的售罄凭证在第 140 分钟被更正（available 0 -> 27）；更正已可见，原依据失效"
+      ],
+      "observed_band_cents": [
+        9300,
+        18000
+      ],
+      "equivalent_groups": [
+        [
+          "north",
+          "partner",
+          "seat"
+        ],
+        [
+          "south",
+          "web",
+          "seat"
+        ],
+        [
+          "south",
+          "partner",
+          "seat"
+        ]
+      ],
+      "revenue_band_cents": [
+        105600,
+        167200
+      ],
+      "correction_warning": {
+        "correcting_id": "C8-north-web-25-R",
+        "original_id": "C8-north-web-25",
+        "seen": 140,
+        "visible": true,
+        "original_available": 0,
+        "corrected_available": 27
+      }
+    },
+    "N2": {
+      "quote_id": "N2",
+      "inclusive_cents": 10300,
+      "group_key": [
+        "south",
+        "partner",
+        "seat"
+      ],
+      "admission": "supported",
+      "reasons": [
+        "等效规则 ['E1'] 已公布，可并入 [('north', 'web', 'seat'), ('north', 'partner', 'seat'), ('south', 'web', 'seat')] 同权益观测",
+        "同口径历史成交量带 8–17 张；另有未满足尝试 1–5 次，属配给证据而非可兑现销量，不计入收入区间"
+      ],
+      "observed_band_cents": [
+        9300,
+        18000
+      ],
+      "equivalent_groups": [
+        [
+          "north",
+          "web",
+          "seat"
+        ],
+        [
+          "north",
+          "partner",
+          "seat"
+        ],
+        [
+          "south",
+          "web",
+          "seat"
+        ]
+      ],
+      "revenue_band_cents": [
+        82400,
+        175100
+      ],
+      "correction_warning": null
+    },
+    "N3": {
+      "quote_id": "N3",
+      "inclusive_cents": 8700,
+      "group_key": [
+        "north",
+        "partner",
+        "seat"
+      ],
+      "admission": "unobserved_price",
+      "reasons": [
+        "等效规则 ['E1'] 已公布，可并入 [('north', 'web', 'seat'), ('south', 'web', 'seat'), ('south', 'partner', 'seat')] 同权益观测",
+        "候选含费价 8700 分超出已辨识区间 9300–18000 分，该价位没有足够支撑，保留在求证区间",
+        "同口径历史成交量带 12–24 张；另有未满足尝试 2–9 次，属配给证据而非可兑现销量，不计入收入区间"
+      ],
+      "observed_band_cents": [
+        9300,
+        18000
+      ],
+      "equivalent_groups": [
+        [
+          "north",
+          "web",
+          "seat"
+        ],
+        [
+          "south",
+          "web",
+          "seat"
+        ],
+        [
+          "south",
+          "partner",
+          "seat"
+        ]
+      ],
+      "revenue_band_cents": [
+        104400,
+        208800
+      ],
+      "correction_warning": null
+    },
+    "N4": {
+      "quote_id": "N4",
+      "inclusive_cents": 9800,
+      "group_key": [
+        "deck",
+        "web",
+        "seat-plus"
+      ],
+      "admission": "no_equivalence",
+      "reasons": [
+        "同口径 ('deck', 'web', 'seat-plus') 没有无污染的历史挂牌（套餐版本 seat-plus 从未在该座区/渠道挂牌）",
+        "无已公布且覆盖本候选的等效规则，跨座区/跨渠道价档不可比较"
+      ],
+      "observed_band_cents": null,
+      "equivalent_groups": [],
+      "revenue_band_cents": null,
+      "correction_warning": null
+    }
+  },
+  "current_effective": [
+    "N2"
+  ],
+  "current_obligation_cents": 394700,
+  "provision_limit_cents": 598000,
+  "refunded_excluded": [
+    "J8-north-web-2",
+    "J8-north-web-4",
+    "J8-north-web-5"
+  ],
+  "bundles": [
+    {
+      "quote_ids": [],
+      "incremental_cents": 0,
+      "total_union_cents": 394700,
+      "within_provision": true,
+      "headroom_after_cents": 203300,
+      "per_quote_increment": {},
+      "liabilities_added": 0,
+      "notes": []
+    }
+  ],
+  "blocked": {
+    "N1": [
+      "等效规则 ['E1'] 已公布，可并入 [('north', 'partner', 'seat'), ('south', 'web', 'seat'), ('south', 'partner', 'seat')] 同权益观测",
+      "候选含费价 8800 分超出已辨识区间 9300–18000 分，该价位没有足够支撑，保留在求证区间",
+      "同口径历史成交量带 12–19 张；另有未满足尝试 1–6 次，属配给证据而非可兑现销量，不计入收入区间",
+      "历史挂牌 O8-north-web 的售罄凭证在第 140 分钟被更正（available 0 -> 27）；更正已可见，原依据失效"
+    ],
+    "N3": [
+      "等效规则 ['E1'] 已公布，可并入 [('north', 'web', 'seat'), ('south', 'web', 'seat'), ('south', 'partner', 'seat')] 同权益观测",
+      "候选含费价 8700 分超出已辨识区间 9300–18000 分，该价位没有足够支撑，保留在求证区间",
+      "同口径历史成交量带 12–24 张；另有未满足尝试 2–9 次，属配给证据而非可兑现销量，不计入收入区间"
+    ],
+    "N4": [
+      "同口径 ('deck', 'web', 'seat-plus') 没有无污染的历史挂牌（套餐版本 seat-plus 从未在该座区/渠道挂牌）",
+      "无已公布且覆盖本候选的等效规则，跨座区/跨渠道价档不可比较"
+    ]
+  },
+  "quote_revenue_bands": {
+    "N1": [
+      105600,
+      167200
+    ],
+    "N2": [
+      82400,
+      175100
+    ],
+    "N3": [
+      104400,
+      208800
+    ]
+  },
+  "quote_trace_counts": {
+    "N1": 0,
+    "N2": 89,
+    "N3": 0,
+    "N4": 0
+  }
+}

@@ -20,3 +20,29 @@ records 保存可离线使用的合成业务记录。每行一个 UTF-8 JSON 对
 ## 核对资料
 
 运行环境为 Python 3.11，使用标准库，无需下载依赖。用 `python3 -m unittest discover -s tests -v` 核对发行资料的完整性与约定的输入关系。
+
+## 调价复核能力（pricing 包）
+
+`pricing/` 在不修改原始记录的前提下，把报价、库存、订单旅程、等效公告、
+保价规则与挂牌台账组合成一轮调价复核：
+
+| 模块 | 职责 |
+| --- | --- |
+| `store.py` | 不可变记录仓；按 `as_of` 重建当时可见事实，迟到的退款、补放、更正不倒填，补录库存只新增版本 |
+| `evidence.py` | 区分售罄、短暂锁位、渠道未放票、无人下单四类需求证据；单列未满足尝试与见面会污染 |
+| `sensitivity.py` | 同开售阶段、同权益口径的可比组、可辨识价格区间与候选准入；区间外价位保留在求证区间 |
+| `protection.py` | 逐单保价核算：含费比较、原渠道/全渠道口径、等效规则效力、全退剔除、多承诺同一差额只兑现一次 |
+| `posting.py` | 发令与生效分离的挂牌台账，识别未执行挂牌及其失效依据 |
+| `engine.py` | 枚举可同时发布的价档组合，按同一次发布的合并义务考核财务准备额，输出净收入与应补款区间 |
+| `report.py` | Markdown/JSON 复核报告的命令行入口 |
+
+常用命令：
+
+```bash
+python3 -m unittest discover -s tests -v          # 资料完整性 + 业务规则测试
+python3 -m pricing.report --records records --as-of 160
+python3 -m pricing.report --records records --as-of 130   # 更正到达前的历史回看
+python3 -m pricing.report --records records --as-of 160 --json plan.json
+```
+
+第 9 轮的复核过程与结论见 `docs/decision_round9.md`。
